@@ -2,7 +2,7 @@
 
 Este repositorio documenta el análisis, modelado y simulación del controlador **ADRC** (Active Disturbance Rejection Control), una técnica moderna de control basada en espacio de estados, enfocada en el rechazo activo de perturbaciones y no linealidades.
 
-## 🔎 Introducción
+## Introducción
 
 El ADRC es una técnica joven (desarrollada alrededor de 2011) que se ha vuelto relevante para aplicaciones en:
 
@@ -12,7 +12,7 @@ El ADRC es una técnica joven (desarrollada alrededor de 2011) que se ha vuelto 
 
 Su principal ventaja es que **no requiere un modelo matemático riguroso**. Se basa en estimar estados y perturbaciones mediante un **observador de estados extendido**.
 
-## 📉 Componentes del Sistema ADRC
+## Componentes del Sistema ADRC
 
 ### 1. Generador de trayectorias
 - Convierte una referencia de posición en perfiles de posición, velocidad y aceleración.
@@ -29,14 +29,14 @@ Su principal ventaja es que **no requiere un modelo matemático riguroso**. Se b
 - La acción de control se genera como:  
   `u = referencia - (K1*z1 + K2*z2 + ... + Kn*zn)`
 
-## ⚖️ Ventajas Clave del ADRC
+##  Ventajas Clave del ADRC
 
 - Rechaza perturbaciones de forma activa sin necesidad de modelos detallados.
 - Integra el error sin requerir una acción integral explícita.
 - Funciona bien incluso con sistemas no lineales aproximados como lineales.
 - Los polos del sistema pueden ubicarse libremente mediante el observador.
 
-## 📊 Implementación Matemática
+## Implementación Matemática
 
 ### Modelo extendido:
 
